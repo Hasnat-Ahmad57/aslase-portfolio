@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aslase - Aslase Portfolio Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <img src="images/aslase-logo.png" alt="Aslase Logo" class="logo-img">
+                </div>
+                <button class="mobile-toggle" id="mobileToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#ai-projects" class="nav-link">AI Projects</a></li>
+                    <li><a href="#web-apps" class="nav-link">Web Applications</a></li>
+                    <li><a href="#mobile-apps" class="nav-link">Mobile Apps</a></li>
+                    <li><a href="#wordpress" class="nav-link">WordPress</a></li>
+                    <li><a href="#cybersecurity" class="nav-link">Cybersecurity</a></li>
+                    <li><a href="#iot" class="nav-link">IoT</a></li>
+                    <li><a href="#uiux" class="nav-link">UI/UX</a></li>
+                    <li><a href="#contact" class="nav-link contact-btn">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <!-- Animated Decorative Dots -->
+        <div class="floating-dots">
+            <div class="dot dot-1"></div>
+            <div class="dot dot-2"></div>
+            <div class="dot dot-3"></div>
+            <div class="dot dot-4"></div>
+            <div class="dot dot-5"></div>
+            <div class="dot dot-6"></div>
+            <div class="dot dot-7"></div>
+            <div class="dot dot-8"></div>
+            <div class="dot dot-9"></div>
+            <div class="dot dot-10"></div>
+            <div class="dot dot-11"></div>
+            <div class="dot dot-12"></div>
+            <div class="dot dot-13"></div>
+            <div class="dot dot-14"></div>
+            <div class="dot dot-15"></div>
+            <div class="dot dot-16"></div>
+            <div class="dot dot-17"></div>
+            <div class="dot dot-18"></div>
+            <div class="dot dot-19"></div>
+            <div class="dot dot-20"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+                <h1 class="hero-title">Aslase Portfolio</h1>
+                <p class="hero-subtitle">Custom Software Development and Consulting Services</p>
+                <div class="hero-buttons" data-aos="fade-up" data-aos-delay="200">
+                    <a href="#ai-projects" class="btn btn-primary">Explore Projects</a>
+                    <a href="#contact" class="btn btn-outline">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- AI & Data Science Projects -->
+    <section id="ai-projects" class="section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">AI & Data Science Projects</h2>
+                <p class="section-subtitle">Innovative solutions powered by artificial intelligence and machine learning</p>
+            </div>
+
+            <!-- AI-Enhanced Interviewer -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="project-content">
+                    <h3 class="project-title">AI-Enhanced Interviewer</h3>
+                    <p class="project-description">The AI Interview Taker is a game-changing solution, leveraging cutting-edge technology to streamline the hiring process, reduce costs, and improve the quality of talent acquisition.</p>
+                    <ul class="project-features">
+                        <li>Conducts video interviews, generates job-related questions, and utilizes the GPT-3.5 Turbo model for advanced interactions</li>
+                        <li>Seamlessly integrates with AWS services like Amazon Polly and Amazon Transcribe for an enhanced interview experience</li>
+                        <li>Efficiently deployed on AWS using TensorFlow Serving and Docker for robust performance and scalability</li>
+                        <li>Features AI-generated avatars for lifelike lip movements, resulting in a remarkable 70% reduction in hiring time</li>
+                    </ul>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">AWS</span>
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">GPT-3.5</span>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <img src="images/slide3_img4.png" alt="AI Interviewer" class="hoverable-image">
+                </div>
+            </div>
+
+            <!-- Resume Filtering System -->
+            <div class="project-card reverse" data-aos="fade-up" data-aos-delay="100">
+                <div class="project-content">
+                    <h3 class="project-title">Intelligent Resume Filtering System</h3>
+                    <p class="project-description">By harnessing advanced NLP and Deep Learning techniques, this system streamlines the recruitment process, enabling HR professionals to swiftly and accurately match candidate resumes to job requirements.</p>
+                    <ul class="project-features">
+                        <li>Utilizes transformer-based embeddings for textual feature generation</li>
+                        <li>Trained a Deep Siamese network with customer-provided data for precise text matching</li>
+                        <li>Deploys the model on AWS for scalability and efficiency</li>
+                        <li>Leverages NLP, Deep Learning, Python, TensorFlow, and Docker</li>
+                    </ul>
+                    <div class="tech-stack">
+                        <span class="tech-tag">NLP</span>
+                        <span class="tech-tag">Deep Learning</span>
+                        <span class="tech-tag">AWS</span>
+                        <span class="tech-tag">Docker</span>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <img src="images/slide4_img4.png" alt="Resume Filtering" class="hoverable-image">
+                </div>
+            </div>
+
+            <!-- Skill Gap Analysis -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="project-content">
+                    <h3 class="project-title">Skill Gap Analysis Solution</h3>
+                    <p class="project-description">This solution bridges the gap between skill supply and demand, assisting organizations in strategic talent development and empowering individuals to identify and acquire the skills needed for career growth.</p>
+                    <ul class="project-features">
+                        <li>Employed Selenium and Requests module for efficient data retrieval from various job portals</li>
+                        <li>Utilized proxy technology to ensure uninterrupted access</li>
+                        <li>Trained and fine-tuned a Transformer-based large language model</li>
+                        <li>Deployed models as microservices on AWS EC2</li>
+                    </ul>
+                    <div class="tech-stack">
+                        <span class="tech-tag">ML</span>
+                        <span class="tech-tag">NLP</span>
+                        <span class="tech-tag">AWS Sagemaker</span>
+                        <span class="tech-tag">Transformers</span>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <img src="images/slide5_img4.png" alt="Skill Gap Analysis" class="hoverable-image">
+                </div>
+            </div>
+
+            <!-- Route Planning -->
+            <div class="project-card reverse" data-aos="fade-up" data-aos-delay="100">
+                <div class="project-content">
+                    <h3 class="project-title">Advanced Route Planning & Optimization System</h3>
+                    <p class="project-description">Efficiently plans waste collection routes, ensuring bins are picked up at the right time while minimizing operational costs and promoting sustainable urban management.</p>
+                    <ul class="project-features">
+                        <li>Utilized Machine Learning for precise garbage container fill-level predictions</li>
+                        <li>Integrated Google OR Tools for optimized route planning</li>
+                        <li>Employed HERE Maps for geospatial route visualization</li>
+                        <li>Optimized algorithm for Edge computing based applications</li>
+                    </ul>
+                    <div class="tech-stack">
+                        <span class="tech-tag">ML</span>
+                        <span class="tech-tag">Google OR Tools</span>
+                        <span class="tech-tag">Edge Computing</span>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <img src="images/slide6_img3.png" alt="Route Planning" class="hoverable-image">
+                </div>
+            </div>
+
+            <!-- IoT Forecasting -->
+            <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="project-content">
+                    <h3 class="project-title">IoT-Based Garbage Bin Fill Level Forecasting</h3>
+                    <p class="project-description">Designed for efficient waste collection by forecasting garbage bin fill levels and optimizing pickup schedules, reducing costs and improving urban waste management.</p>
+                    <ul class="project-features">
+                        <li>Utilizes AWS Forecast for advanced Time Series forecasting</li>
+                        <li>Ingests data from over 3,000 IoT sensors for real-time monitoring</li>
+                        <li>Generates one-week ahead fill level forecasts for garbage containers</li>
+                        <li>Achieves an impressive 9% mean absolute error</li>
+                    </ul>
+                    <div class="tech-stack">
+                        <span class="tech-tag">AWS Forecast</span>
+                        <span class="tech-tag">IoT</span>
+                        <span class="tech-tag">Time Series</span>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <img src="images/slide7_img3.png" alt="IoT Forecasting" class="hoverable-image">
+                </div>
+            </div>
+
+            <!-- More AI Projects -->
+            <div class="projects-grid">
+                <div class="project-mini" data-aos="fade-up">
+                    <div class="project-mini-image">
+                        <img src="images/slide8_img3.png" alt="Smart FAQ" class="hoverable-image">
+                    </div>
+                    <h4>Smart FAQ Assistant</h4>
+                    <p>Advanced chatbot with NLP and Deep Learning for automated customer support.</p>
+                </div>
+
+                <div class="project-mini" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-mini-image">
+                        <img src="images/slide9_img4.png" alt="Daigou Tracker" class="hoverable-image">
+                    </div>
+                    <h4>Daigou Tracker</h4>
+                    <p>AI engine to identify anomalous shopping behavior patterns.</p>
+                </div>
+
+                <div class="project-mini" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-mini-image">
+                        <img src="images/slide10_img4.png" alt="Document Retrieval" class="hoverable-image">
+                    </div>
+                    <h4>Shipment Document Information Retrieval</h4>
+                    <p>Automated extraction of key information from shipment documents using AWS Textract.</p>
+                </div>
+
+                <div class="project-mini" data-aos="fade-up">
+                    <div class="project-mini-image">
+                        <img src="images/slide11_img4.png" alt="Road Distress" class="hoverable-image">
+                    </div>
+                    <h4>Critical Road Distress Analysis</h4>
+                    <p>Advanced segmentation models for precise detection of road distress areas.</p>
+                </div>
+
+                <div class="project-mini" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-mini-image">
+                        <img src="images/slide12_img4.png" alt="Construction Phase" class="hoverable-image">
+                    </div>
+                    <h4>Construction Phase Cycle Prediction</h4>
+                    <p>Real-time prediction of construction phases using time series video analytics.</p>
+                </div>
+
+                <div class="project-mini" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-mini-image">
+                        <img src="images/slide13_img4.png" alt="Object Detection" class="hoverable-image">
+                    </div>
+                    <h4>Multi-Domain Object Detection</h4>
+                    <p>Advanced object detection using YOLOV3, MaskRCNN, and FasterRCNN.</p>
+                </div>
+
+                <div class="project-mini" data-aos="fade-up">
+                    <div class="project-mini-image">
+                        <img src="images/slide14_img4.png" alt="Marketing Analysis" class="hoverable-image">
+                    </div>
+                    <h4>Product Marketing Analysis</h4>
+                    <p>Extract valuable insights from Instagram posts data using ML and sentiment analysis.</p>
+                </div>
+
+                <div class="project-mini" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-mini-image">
+                        <img src="images/slide15_img4.png" alt="3D Generation" class="hoverable-image">
+                    </div>
+                    <h4>3D Object Generation</h4>
+                    <p>Creating 3D meshes from 2D images using generative modeling techniques.</p>
+                </div>
+
+                <div class="project-mini" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-mini-image">
+                        <img src="images/slide16_img4.png" alt="Text Summarization" class="hoverable-image">
+                    </div>
+                    <h4>Text Summarization & Classification</h4>
+                    <p>Utilizing Word2Vec and BERT for text summarization and classification.</p>
+                </div>
+
+                <div class="project-mini" data-aos="fade-up">
+                    <div class="project-mini-image">
+                        <img src="images/slide17_img4.png" alt="Speech Recognition" class="hoverable-image">
+                    </div>
+                    <h4>Automatic Speech Recognition</h4>
+                    <p>End-to-end ASR system for Urdu language using TDNN acoustic models.</p>
+                </div>
+
+                <div class="project-mini" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-mini-image">
+                        <img src="images/slide18_img4.png" alt="Toxicity Detection" class="hoverable-image">
+                    </div>
+                    <h4>Toxicity Detection</h4>
+                    <p>AI models for automatic detection of toxic content using Transformer Language Models.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Web Applications -->
+    <section id="web-apps" class="section section-alt">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Website & Web Applications</h2>
+                <p class="section-subtitle">Turning Ideas into Business</p>
+            </div>
+
+            <div class="tech-showcase" data-aos="fade-up">
+                <img src="images/slide20_img3.jpg" alt="Technology Stack" class="tech-image">
+                <h3>Hands-On Experience with Technologies</h3>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card-mini" data-aos="fade-up">
+                    <div class="project-card-image">
+                        <img src="images/slide21_img3.png" alt="HR Management" class="hoverable-image">
+                    </div>
+                    <div class="project-card-content">
+                        <h4>AI Based Human Resource Management System</h4>
+                        <p>A human capital management system that helps recruitment agencies find the best match for their jobs using AI/ML based models.</p>
+                        <div class="tech-stack-mini">
+                            <span>Node.js</span>
+                            <span>Vue.js</span>
+                            <span>PostgreSQL</span>
+                            <span>AWS</span>
+                            <span>ML</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card-mini" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card-image">
+                        <img src="images/slide22_img3.png" alt="Reverse Logistics" class="hoverable-image">
+                    </div>
+                    <div class="project-card-content">
+                        <h4>Reverse Logistic Management</h4>
+                        <p>A management solution providing reverse logistics with a manufacturing mindset. Complete return process pipeline including receiving, tagging, inspecting, and repairing units.</p>
+                        <div class="tech-stack-mini">
+                            <span>Vue.js</span>
+                            <span>Laravel</span>
+                            <span>MySQL</span>
+                            <span>Docker</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card-mini" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card-image">
+                        <img src="images/slide23_img4.png" alt="Waste Management" class="hoverable-image">
+                    </div>
+                    <div class="project-card-content">
+                        <h4>Waste Management Solution</h4>
+                        <p>IoT Platform for city planners to plan & execute waste collection in an effective manner while optimizing costs.</p>
+                        <div class="tech-stack-mini">
+                            <span>Node.js</span>
+                            <span>Angular</span>
+                            <span>MySQL</span>
+                            <span>AWS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card-mini" data-aos="fade-up">
+                    <div class="project-card-image">
+                        <img src="images/slide24_img3.png" alt="Healthcare" class="hoverable-image">
+                    </div>
+                    <div class="project-card-content">
+                        <h4>Health Care Application</h4>
+                        <p>Healthcare solution providing online first aid through video streaming with secure HIPAA-compliant data management.</p>
+                        <div class="tech-stack-mini">
+                            <span>Node.js</span>
+                            <span>Angular</span>
+                            <span>PostgreSQL</span>
+                            <span>RabbitMQ</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card-mini" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card-image">
+                        <img src="images/slide25_img4.png" alt="Event Management" class="hoverable-image">
+                    </div>
+                    <div class="project-card-content">
+                        <h4>Event Management Application</h4>
+                        <p>Portal extending accessibility across different platforms with user account management, content control, and analytics.</p>
+                        <div class="tech-stack-mini">
+                            <span>NodeJS</span>
+                            <span>PostgreSQL</span>
+                            <span>PHP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card-mini" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card-image">
+                        <img src="images/slide26_img3.png" alt="Survey Management" class="hoverable-image">
+                    </div>
+                    <div class="project-card-content">
+                        <h4>Online Survey Management</h4>
+                        <p>ERP solution to manage inventory, food orders, users and payment invoices with role-based permissions.</p>
+                        <div class="tech-stack-mini">
+                            <span>Node.js</span>
+                            <span>Angular</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card-mini" data-aos="fade-up">
+                    <div class="project-card-image">
+                        <img src="images/slide27_img4.png" alt="Telecom Management" class="hoverable-image">
+                    </div>
+                    <div class="project-card-content">
+                        <h4>Telecom Management Solution</h4>
+                        <p>Strategic platform helping users understand opportunities in telecom vertical markets with microservices architecture.</p>
+                        <div class="tech-stack-mini">
+                            <span>Angular</span>
+                            <span>NodeJS</span>
+                            <span>C++</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card-mini" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card-image">
+                        <img src="images/slide28_img4.png" alt="Home Rental" class="hoverable-image">
+                    </div>
+                    <div class="project-card-content">
+                        <h4>Home Rental Search Engine</h4>
+                        <p>Rental search engine providing value to landlords and home seekers across 20+ different countries.</p>
+                        <div class="tech-stack-mini">
+                            <span>Python</span>
+                            <span>Web Scraping</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card-mini" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card-image">
+                        <img src="images/slide29_img3.png" alt="Realtor Marketplace" class="hoverable-image">
+                    </div>
+                    <div class="project-card-content">
+                        <h4>Realtor Marketplace Application</h4>
+                        <p>Platform transforming the real estate sector with transparency, authenticity and secure investment.</p>
+                        <div class="tech-stack-mini">
+                            <span>Nest.JS</span>
+                            <span>Next.JS</span>
+                            <span>PostgreSQL</span>
+                            <span>AWS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card-mini" data-aos="fade-up">
+                    <div class="project-card-image">
+                        <img src="images/slide30_img3.png" alt="Ticket Booking" class="hoverable-image">
+                    </div>
+                    <div class="project-card-content">
+                        <h4>Online Ticket Booking</h4>
+                        <p>Web-based application for convenient online booking and reservation of transportation services.</p>
+                        <div class="tech-stack-mini">
+                            <span>Vue.js</span>
+                            <span>Node.js</span>
+                            <span>MySQL</span>
+                            <span>AWS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card-mini" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card-image">
+                        <img src="images/slide31_img4.png" alt="WMS Logistics" class="hoverable-image">
+                    </div>
+                    <div class="project-card-content">
+                        <h4>WMS & Logistics</h4>
+                        <p>One-stop solution for transport, warehouse management, customs clearance, and shipping with full visibility.</p>
+                        <div class="tech-stack-mini">
+                            <span>Angular</span>
+                            <span>Node.js</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile Applications -->
+    <section id="mobile-apps" class="section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Mobile Applications</h2>
+                <p class="section-subtitle">Crafting Tomorrow's Mobile Experiences Today</p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card-mini" data-aos="fade-up">
+                    <div class="project-card-image">
+                        <img src="images/slide33_img4.png" alt="Smart Gate Lock" class="hoverable-image">
+                    </div>
+                    <div class="project-card-content">
+                        <h4>Smart Gate Lock</h4>
+                        <p>Mobile app connecting with electric locks for remote unlocking, providing convenient and secure access control.</p>
+                        <div class="tech-stack-mini">
+                            <span>Kotlin</span>
+                            <span>Swift</span>
+                            <span>Android</span>
+                            <span>iOS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card-mini" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card-image">
+                        <img src="images/slide34_img4.png" alt="Car Sharing" class="hoverable-image">
+                    </div>
+                    <div class="project-card-content">
+                        <h4>Car Sharing Platform</h4>
+                        <p>Seamless car sharing experience with nearby vehicle location, reservation, and smartphone unlocking.</p>
+                        <div class="tech-stack-mini">
+                            <span>Kotlin</span>
+                            <span>Swift</span>
+                            <span>Android</span>
+                            <span>iOS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card-mini" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card-image">
+                        <img src="images/slide35_img4.png" alt="Bike Security" class="hoverable-image">
+                    </div>
+                    <div class="project-card-content">
+                        <h4>Bike Security Application</h4>
+                        <p>Remote bike control with lock/unlock, real-time tracking, security alerts, and remote engine disable.</p>
+                        <div class="tech-stack-mini">
+                            <span>Kotlin</span>
+                            <span>Swift</span>
+                            <span>IoT</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card-mini" data-aos="fade-up">
+                    <div class="project-card-image">
+                        <img src="images/slide38_img4.png" alt="Healthcare App" class="hoverable-image">
+                    </div>
+                    <div class="project-card-content">
+                        <h4>Health Care Application</h4>
+                        <p>Virtual medical appointments with doctors through video consultations and medical advice platform.</p>
+                        <div class="tech-stack-mini">
+                            <span>Node.js</span>
+                            <span>Angular</span>
+                            <span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card-mini" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card-image">
+                        <img src="images/slide37_img4.png" alt="Event Management Mobile" class="hoverable-image">
+                    </div>
+                    <div class="project-card-content">
+                        <h4>Event Management Application</h4>
+                        <p>Mobile app for organizers managing events including polling guests, scoring and various management modules.</p>
+                        <div class="tech-stack-mini">
+                            <span>NodeJS</span>
+                            <span>PostgreSQL</span>
+                            <span>PHP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card-mini" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card-image">
+                        <img src="images/slide39_img4.png" alt="Car Security Mobile" class="hoverable-image">
+                    </div>
+                    <div class="project-card-content">
+                        <h4>Car Security Application</h4>
+                        <p>Compact device for remote car control with lock/unlock, GPS tracking, security alerts, and engine disable.</p>
+                        <div class="tech-stack-mini">
+                            <span>Kotlin</span>
+                            <span>Swift</span>
+                            <span>IoT</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WordPress & E-commerce -->
+    <section id="wordpress" class="section section-alt">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">WordPress & E-commerce</h2>
+                <p class="section-subtitle">Professional websites and online stores</p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card-mini" data-aos="fade-up">
+                    <div class="project-card-image">
+                        <img src="images/slide40_img3.png" alt="Clothing Store" class="hoverable-image">
+                    </div>
+                    <div class="project-card-content">
+                        <h4>Online Clothing E-commerce Store</h4>
+                        <p>Stunning website for fashion business with intuitive search and filter system.</p>
+                        <div class="tech-stack-mini">
+                            <span>WordPress</span>
+                            <span>WooCommerce</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card-mini" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card-image">
+                        <img src="images/slide41_img4.png" alt="Electronics Store" class="hoverable-image">
+                    </div>
+                    <div class="project-card-content">
+                        <h4>Electronic Device E-Store</h4>
+                        <p>Online mobile phone shop with wholesale/retail devices and customization services.</p>
+                        <div class="tech-stack-mini">
+                            <span>WordPress</span>
+                            <span>WooCommerce</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card-mini" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card-image">
+                        <img src="images/slide42_img4.png" alt="Online Boutique" class="hoverable-image">
+                    </div>
+                    <div class="project-card-content">
+                        <h4>Online Boutique</h4>
+                        <p>Clothing store offering wholesale/retail apparel with custom stitching services.</p>
+                        <div class="tech-stack-mini">
+                            <span>WordPress</span>
+                            <span>WooCommerce</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card-mini" data-aos="fade-up">
+                    <div class="project-card-image">
+                        <img src="images/slide43_img4.png" alt="Online Magazine" class="hoverable-image">
+                    </div>
+                    <div class="project-card-content">
+                        <h4>Online Magazine</h4>
+                        <p>One-stop-shop magazine sharing marketing lessons and brand operation insights.</p>
+                        <div class="tech-stack-mini">
+                            <span>WordPress</span>
+                            <span>Gutenberg</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card-mini" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card-image">
+                        <img src="images/slide44_img4.png" alt="Consultancy Firm" class="hoverable-image">
+                    </div>
+                    <div class="project-card-content">
+                        <h4>Consultancy Firm</h4>
+                        <p>Unique custom design for real estate consultancy firm from Adobe Illustrator.</p>
+                        <div class="tech-stack-mini">
+                            <span>WordPress</span>
+                            <span>Elementor</span>
+                            <span>Adobe Illustrator</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cybersecurity -->
+    <section id="cybersecurity" class="section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Cyber Security</h2>
+                <p class="section-subtitle">Securing Tomorrow's Connected World</p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card-mini" data-aos="fade-up">
+                    <div class="project-card-image">
+                        <img src="images/slide46_img4.png" alt="Windows MFA" class="hoverable-image">
+                    </div>
+                    <div class="project-card-content">
+                        <h4>Windows Login MFA</h4>
+                        <p>Multi-factor authentication for Windows with YubiKey, SMS, and AI-based anomaly detection.</p>
+                        <div class="tech-stack-mini">
+                            <span>C++</span>
+                            <span>Windows</span>
+                            <span>AI/ML</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card-mini" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card-image">
+                        <img src="images/slide47_img4.png" alt="MacOS MFA" class="hoverable-image">
+                    </div>
+                    <div class="project-card-content">
+                        <h4>MacOS Login MFA</h4>
+                        <p>Custom Mac authorization plugin with multiple authentication factors and anomaly detection.</p>
+                        <div class="tech-stack-mini">
+                            <span>Swift</span>
+                            <span>MacOS</span>
+                            <span>AI/ML</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card-mini" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card-image">
+                        <img src="images/slide47_img4.png" alt="MacOS Desktop" class="hoverable-image">
+                    </div>
+                    <div class="project-card-content">
+                        <h4>MacOS Desktop App</h4>
+                        <p>User-friendly system files and authorization plugin configuration application.</p>
+                        <div class="tech-stack-mini">
+                            <span>Swift</span>
+                            <span>MacOS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- IoT -->
+    <section id="iot" class="section section-alt">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">IoT</h2>
+                <p class="section-subtitle">Empowering the Future: Our IoT Innovations in Action</p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card-mini" data-aos="fade-up">
+                    <div class="project-card-image">
+                        <img src="images/slide50_img4.png" alt="Smart Card" class="hoverable-image">
+                    </div>
+                    <div class="project-card-content">
+                        <h4>PKI Smart Card Scanner</h4>
+                        <p>Smart card reader/writer for storing PKI certificates and user authentication.</p>
+                        <div class="tech-stack-mini">
+                            <span>C++</span>
+                            <span>Edge Computing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card-mini" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card-image">
+                        <img src="images/slide51_img4.jpg" alt="Fingerprint" class="hoverable-image">
+                    </div>
+                    <div class="project-card-content">
+                        <h4>Fingerprint Reader</h4>
+                        <p>Digital Persona UrU4500 fingerprint verification software for access management.</p>
+                        <div class="tech-stack-mini">
+                            <span>C++</span>
+                            <span>Edge Computing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card-mini" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card-image">
+                        <img src="images/slide52_img4.png" alt="Cattle Detection" class="hoverable-image">
+                    </div>
+                    <div class="project-card-content">
+                        <h4>Sickness/Heat Detecting for Cattle</h4>
+                        <p>IoT gadget detecting sickness and estrus in cattle using ML techniques.</p>
+                        <div class="tech-stack-mini">
+                            <span>C++</span>
+                            <span>MPU6050</span>
+                            <span>LoRa</span>
+                            <span>Edge Computing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card-mini" data-aos="fade-up">
+                    <div class="project-card-image">
+                        <img src="images/slide53_img4.png" alt="Remote Monitoring" class="hoverable-image">
+                    </div>
+                    <div class="project-card-content">
+                        <h4>Remote Monitoring Application</h4>
+                        <p>System for remote monitoring and control of drip irrigation systems.</p>
+                        <div class="tech-stack-mini">
+                            <span>C++</span>
+                            <span>LoRa</span>
+                            <span>Edge Computing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card-mini" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card-image">
+                        <img src="images/slide54_img4.png" alt="Car Security IoT" class="hoverable-image">
+                    </div>
+                    <div class="project-card-content">
+                        <h4>Car Security</h4>
+                        <p>Gadget with proximity-based lock/unlock and GPS tracking for vehicles.</p>
+                        <div class="tech-stack-mini">
+                            <span>ESP</span>
+                            <span>STM32</span>
+                            <span>BLE</span>
+                            <span>C++</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card-mini" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card-image">
+                        <img src="images/slide55_img4.png" alt="Smart Gate IoT" class="hoverable-image">
+                    </div>
+                    <div class="project-card-content">
+                        <h4>Smart Gate Lock</h4>
+                        <p>Smart gadget for electric gate locks with digital key management.</p>
+                        <div class="tech-stack-mini">
+                            <span>ESP</span>
+                            <span>STM32</span>
+                            <span>BLE</span>
+                            <span>C++</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card-mini" data-aos="fade-up">
+                    <div class="project-card-image">
+                        <img src="images/slide56_img4.png" alt="Bike Security IoT" class="hoverable-image">
+                    </div>
+                    <div class="project-card-content">
+                        <h4>Bike Security Application</h4>
+                        <p>Device for bicycle security with proximity lock and GPS tracking.</p>
+                        <div class="tech-stack-mini">
+                            <span>ESP</span>
+                            <span>STM32</span>
+                            <span>BLE</span>
+                            <span>C++</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- UI/UX -->
+    <section id="uiux" class="section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">UI/UX</h2>
+                <p class="section-subtitle">Transforming Ideas into Intuitive Experiences</p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card-mini" data-aos="fade-up">
+                    <div class="project-card-image">
+                        <img src="images/slide58_img4.png" alt="Advertising Agency" class="hoverable-image">
+                    </div>
+                    <div class="project-card-content">
+                        <h4>Advertising Agency</h4>
+                        <p>Futuristic landing page design for AI-powered advertising products.</p>
+                        <div class="tech-stack-mini">
+                            <span>Figma</span>
+                            <span>Adobe XD</span>
+                            <span>Adobe Illustrator</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card-mini" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card-image">
+                        <img src="images/slide59_img4.png" alt="Environmental Platform" class="hoverable-image">
+                    </div>
+                    <div class="project-card-content">
+                        <h4>Environmental Platform</h4>
+                        <p>Platform for environmentalists providing precise historical weather information.</p>
+                        <div class="tech-stack-mini">
+                            <span>Figma</span>
+                            <span>Adobe XD</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card-mini" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card-image">
+                        <img src="images/slide60_img4.png" alt="Educational Platform" class="hoverable-image">
+                    </div>
+                    <div class="project-card-content">
+                        <h4>Educational Platform</h4>
+                        <p>User-friendly quiz platform with comprehensive management tools.</p>
+                        <div class="tech-stack-mini">
+                            <span>Figma</span>
+                            <span>Adobe XD</span>
+                            <span>Marvel</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card-mini" data-aos="fade-up">
+                    <div class="project-card-image">
+                        <img src="images/slide61_img4.png" alt="Beauty Brand" class="hoverable-image">
+                    </div>
+                    <div class="project-card-content">
+                        <h4>Beauty Brand & Shop</h4>
+                        <p>Sophisticated website showcasing beauty products with elegant design.</p>
+                        <div class="tech-stack-mini">
+                            <span>Figma</span>
+                            <span>Adobe Photoshop</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card-mini" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card-image">
+                        <img src="images/slide64_img4.png" alt="Medical Application" class="hoverable-image">
+                    </div>
+                    <div class="project-card-content">
+                        <h4>Medical Application</h4>
+                        <p>Complete digital ecosystem for medical device distribution.</p>
+                        <div class="tech-stack-mini">
+                            <span>Figma</span>
+                            <span>Adobe XD</span>
+                            <span>Marvel</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card-mini" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card-image">
+                        <img src="images/slide64_img5.png" alt="Finance Application" class="hoverable-image">
+                    </div>
+                    <div class="project-card-content">
+                        <h4>Finance Application</h4>
+                        <p>User-friendly Fintech platform simplifying the investment process.</p>
+                        <div class="tech-stack-mini">
+                            <span>Figma</span>
+                            <span>Adobe XD</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card-mini" data-aos="fade-up">
+                    <div class="project-card-image">
+                        <img src="images/slide64_img6.png" alt="WordPress Theme" class="hoverable-image">
+                    </div>
+                    <div class="project-card-content">
+                        <h4>WordPress Theme</h4>
+                        <p>Developer-centric components designs for customizable WordPress themes.</p>
+                        <div class="tech-stack-mini">
+                            <span>Figma</span>
+                            <span>Adobe XD</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card-mini" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card-image">
+                        <img src="images/slide65_img4.png" alt="Event Organization" class="hoverable-image">
+                    </div>
+                    <div class="project-card-content">
+                        <h4>Event Organization Application</h4>
+                        <p>Intuitive app for planning and organizing celebrations.</p>
+                        <div class="tech-stack-mini">
+                            <span>Figma</span>
+                            <span>Adobe XD</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card-mini" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card-image">
+                        <img src="images/slide66_img4.png" alt="Creative Agency" class="hoverable-image">
+                    </div>
+                    <div class="project-card-content">
+                        <h4>Creative Agency</h4>
+                        <p>Modern web design for US-based creative photography agency.</p>
+                        <div class="tech-stack-mini">
+                            <span>Figma</span>
+                            <span>Adobe XD</span>
+                            <span>Adobe Photoshop</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Ready to transform your ideas into reality?</p>
+            </div>
+
+            <div class="contact-content" data-aos="fade-up" data-aos-delay="200">
+                <div class="contact-info">
+                    <a href="mailto:sales@aslase.com" class="contact-item contact-item-clickable">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <div>
+                            <h4>Email</h4>
+                            <p class="contact-detail">sales@aslase.com</p>
+                        </div>
+                    </a>
+
+                    <a href="https://wa.me/971502363025" target="_blank" rel="noopener noreferrer" class="contact-item contact-item-clickable">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                        <div>
+                            <h4>Phone</h4>
+                            <p class="contact-detail">+971 50 236 3025</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="cta-box" data-aos="zoom-in" data-aos-delay="400">
+                    <h3>Let's Build Something Amazing Together</h3>
+                    <p>We're passionate about creating innovative solutions that drive business growth. Whether you need AI/ML expertise, web development, mobile apps, or IoT solutions, we're here to help.</p>
+                    <a href="https://wa.me/971502363025" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Start Your Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="images/aslase-logo.png" alt="Aslase Logo" class="footer-logo">
+                    <p>Transforming ideas into innovative digital solutions</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#ai-projects">AI Projects</a></li>
+                        <li><a href="#web-apps">Web Apps</a></li>
+                        <li><a href="#mobile-apps">Mobile Apps</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p>sales@aslase.com</p>
+                    <p>+971 50 236 3025</p>
+                    <div class="footer-website">
+                        <h4>Website</h4>
+                        <p><a href="https://aslase.com/" target="_blank" rel="noopener noreferrer">aslase.com</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Aslase. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
