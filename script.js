@@ -26,8 +26,27 @@ class ThemeManager {
 
     bindEvents() {
         const themeToggle = document.getElementById('themeToggle');
+        const themeToggleMobile = document.getElementById('themeToggleMobile');
+        
         if (themeToggle) {
             themeToggle.addEventListener('click', () => this.toggleTheme());
+        }
+        
+        if (themeToggleMobile) {
+            themeToggleMobile.addEventListener('click', () => {
+                this.toggleTheme();
+                this.updateMobileSwitchLabel();
+            });
+        }
+        
+        // Initialize mobile switch label
+        this.updateMobileSwitchLabel();
+    }
+    
+    updateMobileSwitchLabel() {
+        const modeLabel = document.querySelector('.theme-switch-mode');
+        if (modeLabel) {
+            modeLabel.textContent = this.theme === 'light' ? 'Light' : 'Dark';
         }
     }
 }
@@ -75,8 +94,20 @@ class NavigationManager {
             link.addEventListener('click', () => {
                 if (window.innerWidth <= 768) {
                     this.navMenu.classList.remove('active');
+                    this.animateHamburger(); // Reset hamburger icon
                 }
             });
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (window.innerWidth <= 768 && 
+                this.navMenu.classList.contains('active') &&
+                !this.navMenu.contains(e.target) && 
+                !this.mobileToggle.contains(e.target)) {
+                this.navMenu.classList.remove('active');
+                this.animateHamburger(); // Reset hamburger icon
+            }
         });
 
         // Smooth scroll for anchor links
@@ -188,12 +219,15 @@ class ScrollAnimator {
     init() {
         // Initialize AOS (Animate On Scroll)
         if (typeof AOS !== 'undefined') {
+            const isMobile = window.innerWidth <= 768;
             AOS.init({
-                duration: 1000,
+                duration: isMobile ? 600 : 1000,  // Faster animations on mobile
                 once: false,
-                offset: 100,
+                offset: isMobile ? 50 : 100,  // Trigger animations sooner on mobile
                 easing: 'ease-out-cubic',
-                mirror: true
+                mirror: true,
+                delay: 0,  // Remove global delay
+                disable: false  // Keep animations enabled on mobile
             });
         }
 
@@ -530,7 +564,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // Performance Optimization
 // ===================================
 
-// Lazy load images
+// Enhanced lazy load images with eager loading for above-the-fold content
 if ('IntersectionObserver' in window) {
     const imageObserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
@@ -543,10 +577,60 @@ if ('IntersectionObserver' in window) {
                 }
             }
         });
+    }, {
+        // Load images slightly before they enter viewport
+        rootMargin: '100px 0px',
+        threshold: 0.01
     });
 
+    // Observe all lazy-loadable images
     document.querySelectorAll('img[data-src]').forEach(img => {
         imageObserver.observe(img);
+    });
+    
+    // For mobile: Preload all images more aggressively and reduce AOS delays
+    if (window.innerWidth <= 768) {
+        // Preload images immediately on mobile
+        const preloadMobileImages = () => {
+            // Get all images in the first few sections
+            const allImages = document.querySelectorAll('img');
+            allImages.forEach((img, index) => {
+                // Preload first 20 images immediately
+                if (index < 20) {
+                    const src = img.getAttribute('src') || img.dataset.src;
+                    if (src && !img.complete) {
+                        const preloadImg = new Image();
+                        preloadImg.src = src;
+                    }
+                }
+            });
+        };
+        
+        // Reduce AOS delays for mobile
+        const reduceMobileAOSDelays = () => {
+            document.querySelectorAll('[data-aos-delay]').forEach(el => {
+                const delay = el.getAttribute('data-aos-delay');
+                if (delay && parseInt(delay) > 0) {
+                    el.setAttribute('data-aos-delay', '0');
+                }
+            });
+        };
+        
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', () => {
+                preloadMobileImages();
+                reduceMobileAOSDelays();
+            });
+        } else {
+            preloadMobileImages();
+            reduceMobileAOSDelays();
+        }
+    }
+} else {
+    // Fallback for browsers without IntersectionObserver
+    document.querySelectorAll('img[data-src]').forEach(img => {
+        img.src = img.dataset.src;
+        img.removeAttribute('data-src');
     });
 }
 

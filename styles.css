@@ -123,6 +123,125 @@ a {
     transition: all 0.3s ease;
 }
 
+/* Desktop theme toggle */
+.theme-toggle-desktop {
+    display: flex;
+}
+
+/* Mobile theme toggle - Switch design */
+.theme-toggle-mobile-wrapper {
+    display: none;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.theme-switch-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    background: var(--bg-tertiary);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.theme-switch-container:hover {
+    background: var(--bg-secondary);
+    transform: translateX(4px);
+}
+
+.theme-switch-label {
+    color: var(--text-primary);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.theme-switch {
+    display: flex;
+    align-items: center;
+    margin: 0 12px;
+}
+
+.theme-switch-track {
+    position: relative;
+    width: 52px;
+    height: 28px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 14px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="dark"] .theme-switch-track {
+    background: linear-gradient(135deg, #1a1d2e 0%, #2d3142 100%);
+}
+
+.theme-switch-thumb {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 24px;
+    height: 24px;
+    background: white;
+    border-radius: 50%;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .theme-switch-thumb {
+    transform: translateX(24px);
+    background: #f9fafb;
+}
+
+.theme-icon {
+    width: 14px;
+    height: 14px;
+    transition: all 0.3s ease;
+}
+
+.theme-switch-thumb .sun-icon {
+    display: block;
+    color: #f59e0b;
+}
+
+.theme-switch-thumb .moon-icon {
+    display: none;
+    color: #6366f1;
+}
+
+[data-theme="dark"] .theme-switch-thumb .sun-icon {
+    display: none;
+}
+
+[data-theme="dark"] .theme-switch-thumb .moon-icon {
+    display: block;
+}
+
+.theme-switch-mode {
+    color: var(--text-secondary);
+    font-size: 14px;
+    font-weight: 500;
+    min-width: 45px;
+    text-align: right;
+}
+
+/* Mobile: Hide desktop toggle, show mobile toggle in menu */
+@media (max-width: 768px) {
+    .theme-toggle-desktop {
+        display: none !important;
+    }
+    
+    .theme-toggle-mobile-wrapper {
+        display: block;
+    }
+}
+
+
 .theme-toggle:hover {
     transform: scale(1.1) rotate(90deg);
     box-shadow: var(--shadow-xl);
@@ -189,12 +308,11 @@ a {
 }
 
 .logo-img {
-    height: 80px;
+    height: 35px;
     width: auto;
     transition: transform 0.3s ease;
-    transform: scale(1.8);
-    transform-origin: left center;
-    margin-right: 60px;
+    position: relative;
+    top: -3px;  /* Negative value moves it UP */
 }
 
 .logo-img:hover {
@@ -1652,6 +1770,13 @@ a {
         gap: 12px;
     }
     
+    /* Center the last item when there's an odd number */
+    .tech-card:nth-child(15) {
+        grid-column: 1 / -1;
+        max-width: 50%;
+        margin: 0 auto;
+    }
+    
     .tech-showcase-enhanced {
         padding: 30px 15px;
     }
@@ -1836,18 +1961,17 @@ a {
 }
 
 .footer-logo {
-    height: 180px;
-    width: 300px;
+    height: 50px;
+    width: auto;
     margin-bottom: 20px;
-    margin-left: -40px;
     object-fit: contain;
-    transform: scale(1.6);
-    transform-origin: left center;
+    display: block;
 }
 
 .footer-brand p {
     color: var(--text-secondary);
     line-height: 1.6;
+    max-width: 400px;
 }
 
 .footer-links h4,
@@ -1965,10 +2089,28 @@ a {
     }
     
     .theme-toggle {
-        top: 80px;
-        right: 20px;
-        width: 45px;
+        position: absolute;
+        top: 10px;
+        right: 80px;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .footer-logo {
         height: 45px;
+        width: auto;
+        margin-bottom: 15px;
+        display: block;
+    }
+    
+    .footer-brand p {
+        margin-left: 0;
+        text-align: left;
     }
 }
 
@@ -1984,6 +2126,28 @@ a {
     .btn {
         width: 100%;
         text-align: center;
+    }
+    
+    .theme-toggle {
+        top: 12px;
+        right: 65px;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .footer-logo {
+        height: 40px;
+        width: auto;
+        margin-bottom: 12px;
+        display: block;
+    }
+    
+    .footer-content {
+        gap: 30px;
+    }
+    
+    .footer-brand p {
+        font-size: 14px;
     }
 }
 

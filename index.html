@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
 </head>
 <body>
-    <!-- Theme Toggle -->
-    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+    <!-- Theme Toggle (Desktop) -->
+    <button class="theme-toggle theme-toggle-desktop" id="themeToggle" aria-label="Toggle theme">
         <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="12" cy="12" r="5"></circle>
             <line x1="12" y1="1" x2="12" y2="3"></line>
@@ -34,7 +34,7 @@
         <div class="container">
             <div class="nav-wrapper">
                 <div class="logo">
-                    <img src="images/aslase-logo.png" alt="Aslase Logo" class="logo-img">
+                    <img src="images/aslase-logo.svg" alt="Aslase Logo" class="logo-img">
                 </div>
                 <button class="mobile-toggle" id="mobileToggle">
                     <span></span>
@@ -42,6 +42,32 @@
                     <span></span>
                 </button>
                 <ul class="nav-menu" id="navMenu">
+                    <li class="theme-toggle-mobile-wrapper">
+                        <div class="theme-switch-container" id="themeToggleMobile">
+                            <span class="theme-switch-label">Theme</span>
+                            <div class="theme-switch">
+                                <div class="theme-switch-track">
+                                    <div class="theme-switch-thumb">
+                                        <svg class="theme-icon sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <circle cx="12" cy="12" r="5"></circle>
+                                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                                        </svg>
+                                        <svg class="theme-icon moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="theme-switch-mode">Light</span>
+                        </div>
+                    </li>
                     <li><a href="#home" class="nav-link">Home</a></li>
                     <li><a href="#ai-projects" class="nav-link">AI Projects</a></li>
                     <li><a href="#web-apps" class="nav-link">Web Applications</a></li>
@@ -1163,7 +1189,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <img src="images/aslase-logo.png" alt="Aslase Logo" class="footer-logo">
+                    <img src="images/aslase-logo.svg" alt="Aslase Logo" class="footer-logo">
                     <p>Transforming ideas into innovative digital solutions</p>
                 </div>
                 <div class="footer-links">
